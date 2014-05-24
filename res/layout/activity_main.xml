@@ -8,41 +8,59 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+     
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/tvInstructions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="@string/TextViewInstructions" />
-
-	<button
-	    android:id="@+id/buttonReplaceText"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_below="@+id/buttonAppendText"	    
-	    android:text="@string/ReplaceButtonText" />
-
-	<button
-	    android:id="@+id/buttonAppendText"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_below="@+id/buttonReadText"
-	    android:text="@string/AppendButtonText" />
-
-	<button
-	    android:id="@+id/buttonReadText"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_below="@+id/textView1"
-	    android:text="@string/ReadButtonText" />
-
+        android:text="@string/InstructionsText" />
+ 
 	<EditText
-	    android:id="@+id/EditText1"
+	    android:id="@+id/etInput"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	    android:layout_below="@+id/buttonReplaceText"
+	    android:layout_below="@+id/buttonSave"
 	    android:ems="10"
 	    android:hint="@string/EditText" />
 	
+	<TextView
+	    android:id="@+id/tvOutput"
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/etInput"
+	    android:background="#BBBBBB" />
+
+	<Button
+	    android:id="@+id/buttonSave"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/tvInstructions"
+	    android:layout_centerHorizontal="true"
+	    android:gravity="center_horizontal"
+	    android:text="@string/SaveButtonText"
+	    android:onClick="buttonSave_pressed" />
+
+	<Button
+	    android:id="@+id/buttonLoad"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/tvInstructions"
+	    android:layout_alignBaseline="@+id/buttonSave"
+	    android:layout_alignBottom="@+id/buttonSave"
+	    android:text="@string/LoadButtonText"
+  	    android:onClick="buttonLoad_pressed" />
+
+	<Button
+	    android:id="@+id/buttonDelete"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/tvInstructions"
+	    android:layout_alignBaseline="@+id/buttonSave"
+	    android:layout_alignBottom="@+id/buttonSave"
+	    android:layout_alignRight="@+id/tvInstructions"
+	    android:text="@string/DeleteButtonText"
+   	    android:onClick="buttonDelete_pressed" />
+
 </RelativeLayout>

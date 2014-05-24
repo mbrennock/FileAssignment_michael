@@ -4,8 +4,8 @@
     <string name="app_name">FileAssignment_megabyte</string>
     <string name="action_settings">Settings</string>
     <string name="EditText">(Your Text Here)</string>
-    <string name="TextViewInstructions">Instructions: </string>
-    <string name="ReadButtonText">Read Text</string>
-    <string name="AppendButtonText">Append Text</string>
-    <string name="ReplaceButtonText">Replace Text</string>    
+    <string name="InstructionsText">Load will restore old strings, Save will record the current one, and Delete will remove all strings</string>
+    <string name="LoadButtonText">Load</string>
+    <string name="SaveButtonText">Save</string>
+    <string name="DeleteButtonText">Delete</string>    
 </resources>
